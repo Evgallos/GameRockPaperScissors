@@ -1,8 +1,8 @@
-###Rock Paper Scissors Game
+# **Rock Paper Scissors Game**
 
-Welcome to the Rock Paper Scissors Game! This is a fun and interactive game built with HTML, CSS, and JavaScript. Challenge the computer and see if you can win!
+Welcome to the Rock Paper Scissors Game! This is a fun and interactive game built with HTML, CSS, and JavaScript. Challenge the computer and see if you can win! It was a great experience for practicing JavaScript.
 
-🚀 Play the Game Locally
+### 🚀 Play the Game Locally
 
 This project is not yet deployed online, but you can run it locally on your machine. Follow the installation steps below to try it out.
 
@@ -68,10 +68,6 @@ open index.html    # macOS
 xdg-open index.html  # Linux
 
 Now, enjoy the game! 🎮
-
-🤝 Contribute
-
-Want to improve the game? Feel free to fork the repository and submit a pull request with your enhancements. If you encounter any issues, report them in the Issues section of the repository.
 
 📜 License
 
