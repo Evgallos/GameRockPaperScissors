@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF - 8" />
+    <meta name="viewport" content="witdh = device-width, initial-scale = 1.0" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      margin: 0;
+      font-family: monospace;
+      font-size: 20px;
+      background-color: white;
+    }
+    #machineChoice {
+      color: red;
+    }
+    #playerChoice {
+      color: blue;
+    }
+  </style>
+  <body class="container">
+        <h1>Welcome to Rock Paper Scissors Game...</h1>
+
+        <p>Choose: Rock, Paper, Scissors or Pen</p>
+        <button onclick="RockPaperScissors()">Play</button>
+
+        <p id="playerChoice"></p>
+        <p id="machineChoice"></p>
+        <p id="result"></p>
+
+        <a href="https://evgallos.com" class="btn btn-primary" targets="_blank">Visit my Webpage</a>
+
+    <script src="game.js"></script>
+  </body>
+</html>
