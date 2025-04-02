@@ -1,4 +1,4 @@
-Rock Paper Scissors Game
+###Rock Paper Scissors Game
 
 Welcome to the Rock Paper Scissors Game! This is a fun and interactive game built with HTML, CSS, and JavaScript. Challenge the computer and see if you can win!
 
