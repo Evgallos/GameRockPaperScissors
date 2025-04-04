@@ -1,6 +1,3 @@
----
-
-### ✅ Ανανεωμένο `README.md`
 
 ```markdown
 # Rock Scissors Toilet Paper and Pen Game 🪨 ✂️ 🧻 ✒️
