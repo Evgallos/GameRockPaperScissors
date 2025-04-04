@@ -2,40 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF - 8" />
-    <meta name="viewport" content="witdh = device-width, initial-scale = 1.0" />
-    <title>Rock Paper Scissors</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors | Evangelos Gallos Project</title>
   </head>
-  <style>
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      text-align: center;
-      margin: 0;
-      font-family: monospace;
-      font-size: 20px;
-      background-color: white;
-    }
-    #machineChoice {
-      color: red;
-    }
-    #playerChoice {
-      color: blue;
-    }
-  </style>
-  <body class="container">
+  <body>
         <h1>Welcome to Rock Paper Scissors Game...</h1>
 
-        <p>Choose: Rock, Paper, Scissors or Pen</p>
-        <button onclick="RockPaperScissors()">Play</button>
+        <!--Choices and Unicodes: -->
+        <div class="choices">
+          <button onclick="playGame('rock')">&#x1FAA8;</button>
+          <button onclick="playGame('scissors')">&#x2702;</button>
+          <button onclick="playGame('paper')">&#x1F9FB;</button>
+          <button onclick="playGame('pen')">&#128394;</button>
+        </div>
+
+        <!-- Choice player and machines display also result: -->
+        <div id="playerDisplay">Player: </div>
+        <div id="machineDisplay">Computer: </div>
+        <div id="resultDisplay"></div>
 
         <p id="playerChoice"></p>
         <p id="machineChoice"></p>
-        <p id="result"></p>
+        <p id="resultDisplay"></p>
 
-        <a href="https://evgallos.com" class="btn btn-primary" targets="_blank">Visit my Webpage</a>
+        <!--Score Display for Player: -->
+        <div class="scoreDisplay">Player Score: 
+          <span id="playerScoreDisplay">0</span>
+        </div>
+
+        <!--Score Display for Machine-->
+        <div class="scoreDisplay">Computer Score: 
+          <span id="machineScoreDisplay">0</span>
+        </div>
+
+        <!--My Portfolio Website-->
+        <a href="https://evgallos.com" style="color:blue;" targets="_blank" style="margin-top: 40px;">Visit my Portfolio</a>
 
     <script src="game.js"></script>
   </body>
