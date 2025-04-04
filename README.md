@@ -30,7 +30,7 @@ If you want to try it now, follow these simple steps:
 2. Navigate into the folder:
 
    ```bash
-   cd rock-paper-scissors
+   cd GameRockPaperScissors
    ```
 
 3. Open `index.html` with your browser:
