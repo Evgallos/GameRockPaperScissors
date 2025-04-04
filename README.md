@@ -98,7 +98,3 @@ Check more projects at:
 
 This project is licensed under the **MIT License**.
 ```
-
----
-
-Αν θέλεις, μπορώ να σου δημιουργήσω και `.zip` με το `README.md` έτοιμο ή να το ανεβάσουμε μαζί στο GitHub! Πες μου τι προτιμάς ✌️
