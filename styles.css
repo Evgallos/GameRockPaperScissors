@@ -1,0 +1,81 @@
+/* Css for Rock paper scissors and pen Game.*/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+h1 {
+  font-size: 3.5rem;
+  color: white;
+  transition: color 0.5s ease;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* HOVER EFFECT H1: */
+h1:hover{
+    color:limegreen;
+}
+
+.choices {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.choices button {
+  font-size: 8rem;
+  min-width: 160px;
+  margin-top: 50px;
+  margin: 0 10px;
+  border-style: solid;
+  border-radius: 200px;
+  background-color: hsl(0, 0%, 27%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  border-color: white;
+}
+
+/* HOVER EFFECT BUTTON: */
+.choices button:hover {
+  background-color: hsl(0, 0%, 70%);
+  border-radius: 100px;
+  border-width: 5px;
+  border-top-color: limegreen;
+  border-left-color: black;
+  border-right-color: black;
+  border-bottom-color: limegreen;
+  
+}
+#playerDisplay,
+#machineDisplay {
+  font-size: 2.5rem;
+}
+
+#resultDisplay {
+  font-size: 5rem;
+  margin: 30px 0;
+}
+
+.scoreDisplay{
+    font-size: 2rem;
+}
+
+
+/* Change color WIN AND LOSE:*/
+.greenText, #playerScoreDisplay{
+    color: limegreen;
+}
+.redText, #machineScoreDisplay{
+    color:red;
+}
+
+a{
+    text-transform: capitalize;
+    text-decoration-thickness: 5px;
+    margin-top: 20px;
+}

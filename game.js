@@ -1,39 +1,68 @@
-function RockPaperScissors() {
+//Rock Papers Scissors and Pena Game:
 
-  let choices = ["Rock", "Paper", "Scissors", "Pen"]; // The choices of the game
-  let playerChoice = prompt("Choice: Rock, Paper, Scissors, Pen").toLowerCase(); //Takes the choice of the player.
-  let machineChoice = choices[Math.floor(Math.random() * 4)]; // The computer choice randomly.
+const choices = ["rock", "paper", "scissors", "pen" ];
+const playerDisplay = document.getElementById("playerDisplay");
+const machineDisplay= document.getElementById("machineDisplay");
+const resultDisplay = document.getElementById("resultDisplay");
 
-  //Output on html:
-  document.getElementById("playerChoice").textContent = `You chose: ${playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)}`;
-  document.getElementById("machineChoice").textContent = `The computer choice: ${machineChoice}`;
+//Mechanism for Score Display: 
+const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+const machineScoreDisplay = document.getElementById("machineScoreDisplay");
 
-  //calculate our result:
+let playerScore = 0;
+let machineScore = 0;
 
-  if (playerChoice === machineChoice.toLowerCase()) {
-    document.getElementById("result").textContent = "Draw!\uD83E\uDD1D";
-  } 
-  
-  else if (
-    (playerChoice == "Rock" && machineChoice == "Scissors") ||
-    (playerChoice == "Paper" && machineChoice == "Rock") ||
-    (playerChoice == "Scissors" && machineChoice == "Paper") ||
-    (playerChoice == "Rock" && machineChoice == "Pen") ||
-    (playerChoice == "Scissors" && machineChoice == "Pen") ||
-    (playerChoice == "Pen" && machineChoice == "Paper")
-  ) {
-    document.getElementById("result").textContent = "You Won! \u{1F389}";
+//Choice random 1 of the 4 choices: 
+function playGame(playerChoice){
 
-  } else if (choices.includes(playerChoice.charAt(0).toUpperCase()+ playerChoice.slice(1))) {
+  const machineChoice = choices[Math.floor(Math.random()* 4)];
+  let result = "";
 
-    document.getElementById("result").textContent = "You Lost \u{1F622}";
+  // Choice player and machine choice if statement & switch case:
+  if(playerChoice === machineChoice){
+    result = "It's a Draw!";
+  }
 
-  } 
-  
-  else {
-    document.getElementById("result").textContent = "Not a such Option/Choice: \u274C";
+  else{
+    switch(playerChoice){
+      case "rock":
+        result = (machineChoice === "scissors" || machineChoice === "pen") ? "You Win!" : "You Lose!";
+        break;
+        case "paper":
+        result = (machineChoice === "rock") ? "You Win!" : "You Lose!";
+        break;
+        case "scissors":
+        result = (machineChoice === "paper" || machineChoice === "pen") ? "You Win!" : "You Lose!";
+        break;
+        case "pen":
+        result = (machineChoice === "paper") ? "You Win!" : "You Lose!";
+        break;
+    }
+  }
 
+  // Display choices plaeyr and machine output result:
+  playerDisplay.textContent = `Player: ${playerChoice}`;
+  machineDisplay.textContent = `Machine: ${machineChoice}`;
+  resultDisplay.textContent = result;
+
+  // Remove green and red color from text when is draw keep it default white:
+  resultDisplay.classList.remove("greenText", "redText");
+
+  // Change to Green color text when win and to Red color: 
+  switch(result){
+    case "You Win!":
+      resultDisplay.classList.add("greenText");
+      // We add the increase player Score:
+      playerScore++;
+      // We update our score: 
+      playerScoreDisplay.textContent = playerScore;
+      break;
+    case "You Lose!":
+      resultDisplay.classList.add("redText");
+      // We add the increase Machine - computer score:
+      machineScore++;
+      // We update the score of machine - computer: 
+      machineScoreDisplay.textContent = machineScore;
+      break;
   }
 }
-//Begins the game:
-RockPaperScissors([]);
