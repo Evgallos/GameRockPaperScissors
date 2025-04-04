@@ -1,76 +1,104 @@
-# **Rock Paper Scissors Game**
+---
 
-Welcome to the Rock Paper Scissors Game! This is a fun and interactive game built with HTML, CSS, and JavaScript. Challenge the computer and see if you can win! It was a great experience for practicing JavaScript.
+### ✅ Ανανεωμένο `README.md`
 
-### 🚀 Play the Game Locally
+```markdown
+# Rock Scissors Toilet Paper and Pen Game 🪨 ✂️ 🧻 ✒️
 
-This project is not yet deployed online, but you can run it locally on your machine. Follow the installation steps below to try it out.
+Welcome to the **Rock, Scissors, Toilet Paper and Pen Game**!  
+This is a fun and interactive game built with **HTML**, **CSS**, and **JavaScript**.  
+Challenge the computer and try to win!
 
-🎮 How to Play
+🎮 This project helped me practice JavaScript logic, DOM manipulation, and event handling.
 
-Click the Play button.
+---
 
-Enter your choice: Rock, Paper, Scissors, or Pen.
+## 🌐 Online Version (Coming Soon)
 
-The computer will randomly pick an option.
+The game will soon be available on my personal website:  
+👉 **[www.evgallos.com](https://www.evgallos.com)**
 
-The result will be displayed instantly.
+---
 
-🛠️ Technologies Used
+## 🚀 Play the Game Locally
 
-HTML for structure
+If you want to try it now, follow these simple steps:
 
-CSS for styling
+1. Clone the repository:
 
-JavaScript for game logic
+   ```bash
+   git clone https://github.com/your-username/rock-paper-scissors.git
+   ```
 
-💻 Code Snippets
+2. Navigate into the folder:
 
-Here’s a sneak peek at the JavaScript logic that powers the game:
+   ```bash
+   cd rock-paper-scissors
+   ```
 
-function getRandomChoice() {
-  let choices = ["Rock", "Paper", "Scissors", "Pen"];
-  return choices[Math.floor(Math.random() * choices.length)];
-}
+3. Open `index.html` with your browser:
 
-📌 Features
+   ```bash
+   start index.html      # Windows  
+   open index.html       # macOS  
+   xdg-open index.html   # Linux
+   ```
 
-✅ Interactive gameplay
-✅ Randomized computer selection
-✅ Simple and clean UI
-✅ Dynamic result display
-✅ Additional "Pen" option for variety
+---
 
-🔧 Future Improvements
+## 🎮 How to Play
 
-Add animations for better user experience
+1. Click one of the icons:
+   - 🪨 Rock  
+   - ✂️ Scissors  
+   - 🧻 Toilet Paper  
+   - ✒️ Pen  
+2. The computer will randomly choose one.
+3. The result (Win / Lose / Draw) is displayed instantly.
+4. Scores update in real time!
 
-Implement a scoreboard system
+---
 
-Create a multiplayer mode
+## 🛠️ Technologies Used
 
-🏗️ Installation Guide
+- ✅ **HTML** – structure  
+- ✅ **CSS** – styling & hover animations  
+- ✅ **JavaScript** – game logic & interactivity
 
-To run this project locally, follow these steps:
+---
 
-Clone the repository:
+## 📌 Features
 
-git clone https://github.com/your-username/rock-paper-scissors.git
+- 🎯 Interactive gameplay  
+- 🎲 Randomized computer selection  
+- ✨ Stylish and clean UI  
+- 🧠 Smart result evaluation  
+- 🧻 Includes “Toilet Paper” for fun twist  
+- 🧾 Scoreboard
 
-Navigate into the project folder:
+---
 
-cd rock-paper-scissors
+## 🔧 Future Improvements
 
-Open index.html in your browser:
+- Add animations for better UX
+- Save scores in localStorage
+- Implement multiplayer mode
+- Add sound effects
 
-start index.html  # Windows
-open index.html    # macOS
-xdg-open index.html  # Linux
+---
 
-Now, enjoy the game! 🎮
+## 🔗 Portfolio
 
-📜 License
+Check more projects at:  
+🌍 [www.evgallos.com](https://www.evgallos.com)
 
-This project is licensed under the MIT License.
+---
 
-🔗 Follow my work: evgallos.com (Coming Soon)
+## 📜 License
+
+This project is licensed under the **MIT License**.
+```
+
+---
+
+Αν θέλεις, μπορώ να σου δημιουργήσω και `.zip` με το `README.md` έτοιμο ή να το ανεβάσουμε μαζί στο GitHub! Πες μου τι προτιμάς ✌️
